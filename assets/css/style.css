@@ -1,0 +1,97 @@
+:root{
+    --primaryColor :  #28293E;
+    --secondaryColor : #F3D1BF;
+}
+*{
+    margin: 0;
+    background-color: var(--primaryColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Logo */
+#component img{
+    width: 486px;
+    height: 189px;
+}
+
+/* Navigation */
+
+#navbarNav ul li a{
+    color: white;
+    font-weight: 100;
+}
+
+/* Hero */
+.heroText{
+    /* Heading 1 */
+    font-family: Lora;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.heroSubText {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.btn-primary{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    width: 200px;
+    height: 48px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid var(--primaryColor);
+}
+.btn-primary:hover{
+    background-color: transparent;
+    border: 1px solid var(--secondaryColor);
+}
+.btn-secondary{
+    background-color: transparent !important;
+    color: var(--secondaryColor);
+    width: 200px;
+    height: 48px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+/* About me */
+#aboutMe {
+    background-color: var(--secondaryColor);
+    min-height: 300px;
+}
+
+/* Work */
+#work {
+    background-color: var(--primaryColor);
+    min-height: 300px;
+}
+
+/* Contact me */
+#contactMe {
+    background-color: var(--secondaryColor);
+    min-height: 300px;
+}
+
+/* Fonts */
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 35px !important;
+}
+.primary-color{
+    color: var(--primaryColor);
+}
+.secondary-color{
+    color: var(--secondaryColor);
+}

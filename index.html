@@ -12,19 +12,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
+        
         <!-- Logo -->
         <div id="component" class="container-fluid py-3 d-flex justify-content-center">
-            <img src="https://via.placeholder.com/486x189">
+            <img src="/assets/images/Logo.png" alt="Text Logo of Gurjeet Singh">
         </div>
-        <!-- Navigation -->
         
         <!-- Div to center Navigation -->
         <div class="d-flex justify-content-center">
-            
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid d-flex justify-content-center">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav d-flex align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                            <a class="nav-link" aria-current="page" href="#">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Work</a>
@@ -48,7 +48,56 @@
                 </div>
             </nav>
         </div>
-            
+        <!-- Hero Section -->
+        <div class="container-fluid" id="hero">
+            <header class="masthead">
+                <div class="conatiner">
+                    <div class="row">
+                        <div class="col-lg-6 secondary-color text-center">
+                            <div class="heroText text-white">Hey There,</div> 
+                            <div class="heroText text-white">I'm Gurjeet </div>
+
+                            <!--SubText  -->
+                            <div class="heroSubText text-center text-white">
+                                <div class="row">
+                                    <div class="col-lg-2 secondary-color text-center">
+                                        <!-- Left empty for space incase, -->
+                                    </div>
+                                    <div class="col-lg-8 secondary-color text-center">
+                                        <p>A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc, quam adipiscing.A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <button type="button" class="btn btn-primary btn-md">Say Hello</button>
+                            <button type="button" class="btn btn-secondary btn-lg">Explore Projects</button>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="device-container">
+                                <img src="assets/images/Logo.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- About me Section -->
+        <div class="container-fluid " id="aboutMe">
+            <h2 class="w-auto p-3 fs-1 heading primary-color" >About me</h2>
+        </div>
+        <!-- Work Section -->
+        <div class="container-fluid" id="work">
+            <h2 class="w-auto p-3 fs-1 heading secondary-color" >Work</h2>
+
+        </div>
+        <!-- Contact me -->
+        <div class="container-fluid" id="contactMe">
+            <h2 class="w-auto p-3 fs-1 heading primary-color" >Contact Me</h2>
+        </div>
+        <!-- Footer -->
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
