@@ -22,6 +22,11 @@
 }
 
 /* Hero */
+
+.heroContainer {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
 .heroText{
     /* Heading 1 */
     font-family: Lora;
@@ -36,7 +41,7 @@
     padding-bottom: 35px;
 }
 
-.btn-primary{
+.btn-basic{
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
     width: 200px;
@@ -47,10 +52,11 @@
     border-radius: 30px;
     border: 1px solid var(--primaryColor);
 }
-.btn-primary:hover{
+.btn-basic:hover{
     background-color: transparent;
     border: 1px solid var(--secondaryColor);
 }
+
 .btn-secondary{
     background-color: transparent !important;
     color: var(--secondaryColor);
@@ -60,6 +66,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+}
+
+.imageBox {
+    background-color: var(--secondaryColor);
+    width: 300px;
+    height: 500px;
+    border-radius: 150px;
+}
+
+.imageBox img{
+    width: 100%;    
 }
 
 /* About me */
