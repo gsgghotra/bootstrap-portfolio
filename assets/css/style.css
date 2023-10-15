@@ -97,6 +97,15 @@
     min-height: 300px;
 }
 
+/* Footer */
+#footer{
+    height: 84px;
+    background-color: var(--primaryColor);
+}
+.conatiner-footer {
+    color: white;
+    padding-top: 30px;
+}
 /* Fonts */
 .heading{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
