@@ -2,10 +2,12 @@
     --primaryColor :  #28293E;
     --secondaryColor : #F3D1BF;
 }
+
 *{
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .primary-bg{
     background-color: var(--primaryColor);
 }
@@ -14,9 +16,7 @@
     width: 486px;
     height: 189px;
 }
-
 /* Navigation */
-
 #navbarNav ul li a{
     color: white;
     font-weight: 100;
@@ -31,10 +31,8 @@
 .heroText{
     font-family:'Times New Roman', Times, serif;
     font-size: 60px;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.4;
-    z-index: 2;
     letter-spacing: 1px;
 }
 
@@ -203,14 +201,54 @@
 /* About me */
 #aboutMe {
     background-color: var(--secondaryColor);
-    min-height: 300px;
+    min-height: 350px;
 }
 
 /* Work */
 #work {
     background-color: var(--primaryColor);
-    min-height: 300px;
+    min-height: 350px;
 }
+
+/* Contact me */
+#contactMe {
+    background-color: var(--secondaryColor);
+    min-height: 350px;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+#footer{
+    height: 84px;
+    background-color: var(--primaryColor);
+}
+.conatiner-footer {
+    color: white;
+    padding-top: 30px;
+}
+
+/* Fonts */
+.heading{
+    font-family:  Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+    color: black;
+    text-align: center;
+    line-height: 42px;
+    font-weight: bold;
+	text-transform: uppercase;
+    padding-top: 50px !important;
+}
+.primary-color{
+    color: var(--primaryColor);
+}
+.secondary-color{
+    color: var(--secondaryColor);
+}
+
+
+/* Card Design */
 .custom-card{
     max-width: 300px;
     margin: 5rem auto;
@@ -260,51 +298,20 @@
         margin-right: 10px;
     }
 }
-
-
-
-
-
-/* Contact me */
-#contactMe {
-    background-color: var(--secondaryColor);
-    min-height: 300px;
-}
-.contact-section{
-    display: flex;
-    justify-content: center;
+.creator {
+    color: #a89ec9;
+    font-size: 14px;
 }
 
-/* Footer */
-#footer{
-    height: 84px;
-    background-color: var(--primaryColor);
-}
-.conatiner-footer {
+/* Footer cards */
+.contact-card{
+    padding: 20px;
+    background-color: #28293e;
     color: white;
-    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+    .card-text{
+        margin-top: 15px;
+    }
 }
-
-
-
-
-/* Fonts */
-.heading{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    color: black;
-    background-color: transparent;
-    text-align: center;
-    padding-top: 35px !important;
-}
-.primary-color{
-    color: var(--primaryColor);
-}
-.secondary-color{
-    color: var(--secondaryColor);
-}
-
-
-
-
-/* Card */
