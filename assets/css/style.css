@@ -21,11 +21,12 @@
     font-weight: 100;
 }
 
-/* Hero */
-
+/* Hero Section*/
 .heroContainer {
     padding-bottom: 100px;
 }
+
+    /* Heading and Buttons */
 .heroText{
     font-family: Lora;
     font-size: 60px;
@@ -44,8 +45,8 @@
 .btn-basic{
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
-    width: 200px;
-    height: 48px;
+    width: 180px;
+    height: 38px;
     padding: 4px;
     justify-content: center;
     align-items: center;
@@ -60,14 +61,15 @@
 .btn-secondary{
     background-color: transparent !important;
     color: var(--secondaryColor);
-    width: 200px;
-    height: 48px;
+    width: 180px;
+    height: 38px;
     padding: 4px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
 }
 
+    /* Image Section in Hero*/
 .imageBox {
     position: relative;
     background-color: var(--secondaryColor);
@@ -91,6 +93,39 @@
     background-size: cover;
 }
 
+.hero-profile .star{
+    width: 1em;
+    font-size: 1.5em;
+    position: relative;
+    margin: 1em auto;
+    box-shadow: rgb(239 206 188) 0px 10px 30px 5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.hero-profile .star:before{
+    content:"";
+    position:absolute;
+    background:#DE0206;
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+.hero-profile .star:after{
+    content:"";
+    position:absolute;
+    background:#DE0206;
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.hero-profile .star-top{
+    top: 78px;
+    margin-left: 250px;
+}
+.hero-profile .star-bottom{
+    bottom: -10px;
+    margin-right: 40px;
+}
+
 /* Hero Background Designs */
 .back-circle{
     width: 90%;
@@ -110,7 +145,7 @@
     border-radius: 50%;
 }
 
-.star{
+.back-circle .star{
     width: 1em;
     font-size: 10px;
     position: relative;
@@ -118,7 +153,7 @@
     box-shadow: rgb(239 206 188) 0px 10px 30px 5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.star:before{
+.back-circle .star:before{
     content:"";
     position:absolute;
     background:var(--secondaryColor);
@@ -126,7 +161,7 @@
     height:1.15em;
     transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
 }
-.star:after{
+.back-circle .star:after{
     content:"";
     position:absolute;
     background:var(--secondaryColor);
@@ -135,11 +170,11 @@
     transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
 }
 
-.star-top {
+.back-circle .star-top {
     top: -20px;
     right: -60px;
 }
-.star-bottom {
+.back-circle .star-bottom {
     right: 92px;
     top: 82px;
 }
