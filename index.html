@@ -15,42 +15,43 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        
-        <!-- Logo -->
-        <div id="component" class="container-fluid py-1 d-flex justify-content-center">
-            <img src="/assets/images/Logo.png" alt="Text Logo of Gurjeet Singh">
-        </div>
-        
-        <!-- Div to center Navigation -->
-        <div class="d-flex justify-content-center">
-            <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid d-flex justify-content-center">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav d-flex align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
-                        </li>
-                        </ul>
+        <header>
+            <!-- Logo -->
+            <div id="component" class="container-fluid py-1 d-flex justify-content-center">
+                <img src="/assets/images/Logo.png" alt="Text Logo of Gurjeet Singh">
+            </div>
+            
+            <!-- Div to center Navigation -->
+            <div class="d-flex justify-content-center">
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid d-flex justify-content-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#aboutMe">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#work">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactMe">Contact Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resume</a>
+                            </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                </nav>
+            </div>
+        </header>
         <!-- Hero Section -->
         <div class="container-fluid" id="hero">
-            <header class="masthead">
+            <div class="masthead">
                 <div class="conatiner heroContainer">
                     <div class="row">
                         <div class="col-lg-6 secondary-color text-center">
@@ -78,25 +79,28 @@
                                     </div>
         
                                     <!-- Buttons -->
-                                    <button type="button" class="btn btn-basic btn-md">Say Hello</button>
-                                    <button type="button" class="btn btn-secondary btn-md">Explore Projects</button>
+                                    <button type="button" class="btn btn-basic btn-md" onclick="location.href = '#aboutMe'">Say Hello</button>
+                                    <button type="button" class="btn btn-secondary btn-md" onclick="location.href = '#work'">Explore Projects</button>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-lg-5">
                             <div class="container d-flex justify-content-center hero-profile position-relative bg-transparent">
+                                <!-- Image Container -->
                                 <div class="imageBox">
-                                    <div class="image">
-                                    </div>
+                                    <div class="image"></div>
                                 </div>
+                                <!-- Starts and information around image -->
                                 <div class="star star-top position-absolute"></div>
                                 <div class="star star-bottom position-absolute"></div>
+                                <div class="text-container job position-absolute bg-black text-white d-flex justify-content-center align-items-center">Web Developer</div>
+                                <div class="text-container experience position-absolute bg-black text-white d-flex justify-content-center align-items-center">Placeholder</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
         </div>
         <!-- About me Section -->
         <div class="container-fluid " id="aboutMe">
