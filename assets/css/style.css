@@ -28,12 +28,13 @@
     padding-bottom: 100px;
 }
 .heroText{
-    /* Heading 1 */
     font-family: Lora;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 1.4;
+    z-index: 2;
+    letter-spacing: 1px;
 }
 
 .heroSubText {
@@ -78,6 +79,63 @@
 .imageBox img{
     width: 100%;    
 }
+
+/* Hero Background Designs */
+.back-circle{
+    width: 90%;
+    left: 40%;
+    top: 180px;
+    position: relative;
+    height: 113.061px;
+    transform: rotate(-6.825deg);
+    flex-shrink: 0;
+
+    /* Border Properties */
+    background: linear-gradient(var(--primaryColor) 0 0) padding-box, /*this is your grey background*/ 
+                linear-gradient(90deg, rgb(91 97 86 / 80%) 25%, rgb(113 134 99 / 72%) 49%, rgb(160 160 233 / 62%) 72%, rgb(0 99 255 / 54%) 88%);
+    border: 2px solid transparent;
+    border-left-color: rgb(81 85 82);
+    border-right-color: rgb(0 74 191 / 70%);
+    border-radius: 50%;
+}
+.star{
+    width: 1em;
+    font-size: 10px;
+    position: relative;
+    margin: 1em auto;
+    box-shadow: rgb(239 206 188) 0px 10px 30px 5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.star:before{
+    content:"";
+    position:absolute;
+    background:var(--secondaryColor);
+    width:1em;
+    height:1.15em;
+    transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.star:after{
+    content:"";
+    position:absolute;
+    background:var(--secondaryColor);
+    width:1em;
+    height:1.15em;
+    transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.star-top {
+    top: -20px;
+    right: -60px;
+}
+.star-bottom {
+    right: 92px;
+    top: 82px;
+}
+
+
+
+
 
 /* About me */
 #aboutMe {
