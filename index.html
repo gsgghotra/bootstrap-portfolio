@@ -51,7 +51,7 @@
         </header>
 
         <!-- Hero Section -->
-        <div class="container-fluid primary-bg" id="hero">
+        <section class="container-fluid primary-bg" id="hero">
             <div class="masthead">
                 <div class="conatiner heroContainer">
                     <div class="row">
@@ -65,7 +65,7 @@
                                         <div class="star star-top"></div>
                                         <div class="star star-bottom"></div>
                                     </div>
-                                    <div class="heroText text-white position-relative bg-transparent">Hey There,<br/> I'm Gurjeet</div>
+                                    <div class="heroText text-white position-relative">Hey There,<br/> I'm Gurjeet</div>
         
                                     <!--SubText  -->
                                     <div class="heroSubText text-center text-white">
@@ -80,14 +80,14 @@
                                     </div>
         
                                     <!-- Buttons -->
-                                    <button type="button" class="btn btn-basic btn-md" onclick="location.href = '#aboutMe'">Say Hello</button>
+                                    <button type="button" class="btn btn-basic btn-md" onclick="location.href = '#contactMe'">Say Hello</button>
                                     <button type="button" class="btn btn-secondary btn-md" onclick="location.href = '#work'">Explore Projects</button>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="col-lg-5">
-                            <div class="container d-flex justify-content-center hero-profile position-relative bg-transparent">
+                            <div class="container d-flex justify-content-center hero-profile position-relative">
                                 <!-- Image Container -->
                                 <div class="imageBox">
                                     <div class="image"></div>
@@ -102,48 +102,76 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- About me Section -->
         <section class="container-fluid " id="aboutMe">
             <h2 class="w-auto p-3 fs-1 heading primary-color" >About me</h2>
-            <p class="bg-transparent text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus illum doloribus harum perspiciatis itaque minima, qui repellat culpa vero molestias odit eius, earum suscipit veniam. Odit perferendis in aliquam. A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc, quam adipiscing.A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc.</p>
+            <p class="text-center p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus illum doloribus harum perspiciatis itaque minima, qui repellat culpa vero molestias odit eius, earum suscipit veniam. Odit perferendis in aliquam. A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc, quam adipiscing.A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc.</p>
         </section>
+
+
         <!-- Work Section -->
         <section class="container-fluid" id="work">
             <h2 class="w-auto p-3 fs-1 heading secondary-color" >Work</h2>
+            <div class="container-fluid p-3 d-flex justify-content-center">
+                <div class="row">
+                    <!-- Work Card 1 -->
+                    <div class="col-lg-3">
+                        <div class="card custom-card" style="width: 18rem;">
+                            <img src="./assets/images/workHolder.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h2>Project Name</h2>
+                                <p class='description'>Description of the project</p>
+                                <div class='tokenInfo'>
+                                    <div class="duration">
+                                        <p> <span>◷</span> Github </p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class='creator'>
+                                    <div class='wrapper'>
+                                        Group Project
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- More Work Cards here -->
+                </div>
+            </div>
         </section>
+
+
         <!-- Contact me -->
         <section class="container-fluid" id="contactMe">
             <h2 class="w-auto p-3 fs-1 heading primary-color" >Contact Me</h2>
-            <div class="conatiner-footer bg-transparent">
-                <div class="row bg-transparent">
-
-                    <!-- Card 1 -->
-                    <div class="contact-section d-flex justify-content-center col-lg-4">
+            <div class="conatiner-footer">
+                <div class="row">
+                    <!-- Contact me Card 1 -->
+                    <div class="contact-section col-lg-4">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-body bg-white">
+                            <div class="card-body">
+                                <h5 class="card-title">Email</h5>
+                                <a class="link-underline link-underline-opacity-0" href = "mailto: gsgghotra@gmail.com">gsgghotra@gmail.com</a>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Contact me Card 2 -->
+                    <div class="contact-section col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
                                 <h5 class="card-title">Email</h5>
                                 <a class="link-underline link-underline-opacity-0" href = "mailto: gsgghotra@gmail.com">gsgghotra@gmail.com</a>
                                 </div>
                             </div>
                     </div>
 
-                    <!-- Card 1 -->
-                    <div class="contact-section d-flex justify-content-center col-lg-4">
+                    <!-- Contact me Card 3 -->
+                    <div class="contact-section col-lg-4">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-body bg-white">
-                                <h5 class="card-title">Email</h5>
-                                <a class="link-underline link-underline-opacity-0" href = "mailto: gsgghotra@gmail.com">gsgghotra@gmail.com</a>
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Card 1 -->
-                    <div class="contact-section d-flex justify-content-center col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body bg-white">
+                            <div class="card-body">
                                 <h5 class="card-title">Email</h5>
                                 <a class="link-underline link-underline-opacity-0" href = "mailto: gsgghotra@gmail.com">gsgghotra@gmail.com</a>
                                 </div>
@@ -154,19 +182,17 @@
         </section>
         
         <!-- Footer -->
-        <footer class="container-fluid" id="footer">
-            <div class="conatiner-footer">
-                <div class="row">
-                    <div class="d-flex justify-content-center col-lg-3">
-                        <p>Logo Placeholder</p>
-                    </div>
-                    <div class="d-flex justify-content-center col-lg-6">
-                        <p>Githib</p>
-                        <p>LinkedIn</p>
-                    </div>
-                    <div class="d-flex justify-content-center col-lg-3">
-                        <p class="">All Rights Reserved 2023</p>
-                    </div>
+        <footer class="container-fluid conatiner-footer" id="footer">
+            <div class="row">
+                <div class="d-flex justify-content-center col-lg-3">
+                    <p>Logo Placeholder</p>
+                </div>
+                <div class="d-flex justify-content-center col-lg-6">
+                    <p>Githib</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="d-flex justify-content-center col-lg-3">
+                    <p class="">All Rights Reserved 2023</p>
                 </div>
             </div>
         </footer>
