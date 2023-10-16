@@ -4,10 +4,11 @@
 }
 *{
     margin: 0;
-    background-color: var(--primaryColor);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.primary-bg{
+    background-color: var(--primaryColor);
+}
 /* Logo */
 #component img{
     width: 486px;
@@ -226,6 +227,13 @@
     color: white;
     padding-top: 30px;
 }
+.contact-section{
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+
+
 /* Fonts */
 .heading{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
