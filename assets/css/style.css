@@ -162,8 +162,8 @@
 /* Hero Background Designs */
 .back-circle{
     width: 90%;
-    left: 40%;
-    top: 180px;
+    left: 195px;
+    top: 174px;
     position: relative;
     height: 113.061px;
     transform: rotate(-6.825deg);
@@ -217,6 +217,10 @@
 #aboutMe {
     background-color: var(--secondaryColor);
     min-height: 350px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    line-height:1.6em;
+    word-spacing: 1px;
 }
 
 /* Work */
@@ -240,7 +244,7 @@
 
 /* Footer */
 #footer{
-    height: 84px;
+    height:fit-content;
     background-color: var(--primaryColor);
 }
 .conatiner-footer {
@@ -270,14 +274,31 @@
     .card-body h2 {
         letter-spacing: 1px;
     }
+    .techInfo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 13px;
+    
+        .tech{
+            display: flex;
+            color: #a89ec9;
+            margin-right: 10px;
+        }
+    }
+    .creator {
+        color: #a89ec9;
+        font-size: 14px;
+    }    
         ::before{
+            position: fixed;
+            content: "";
             box-shadow: 0 0 100px 40px #ffffff08;
             top: -10%;
             left: -100%;
             transform: rotate(-45deg);
             height: 60rem;
             transition: .7s all;
-            margin-right: 10px;
         }
 
         &:hover{
@@ -293,21 +314,3 @@
         }
     }  
 }
-
-.techInfo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 13px;
-
-    .tech{
-        display: flex;
-        color: #a89ec9;
-        margin-right: 10px;
-    }
-}
-.creator {
-    color: #a89ec9;
-    font-size: 14px;
-}
-
