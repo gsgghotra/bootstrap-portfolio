@@ -196,9 +196,6 @@
 }
 
 
-
-
-
 /* About me */
 #aboutMe {
     background-color: var(--secondaryColor);
@@ -215,10 +212,6 @@
 #contactMe {
     background-color: var(--secondaryColor);
     min-height: 350px;
-}
-.contact-section{
-    display: flex;
-    justify-content: center;
 }
 
 /* Footer */
@@ -306,13 +299,8 @@
 
 /* Footer cards */
 .contact-card{
-    padding: 20px;
-    background-color: #28293e;
-    color: white;
-    border-radius: 20px;
+    padding: 25px;
+    border-radius: 5px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
-    .card-text{
-        margin-top: 15px;
-    }
 }
