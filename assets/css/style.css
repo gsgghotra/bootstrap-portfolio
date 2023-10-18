@@ -14,7 +14,7 @@
     text-align: center;
     line-height: 42px;
     font-weight: bold;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
     padding-top: 50px !important;
 }
 /* Color classes */
@@ -218,7 +218,7 @@
     background-color: var(--secondaryColor);
     min-height: 350px;
     padding-bottom: 40px;
-    font-size: 24px;
+    font-size: 20px;
     line-height:1.6em;
     word-spacing: 1px;
 }
@@ -247,15 +247,14 @@
     height:fit-content;
     background-color: var(--primaryColor);
 }
-.conatiner-footer {
-    color: white;
-    padding-top: 30px;
-}
+
 
 
 /* Card Design */
 .custom-card{
-    max-width: 300px;
+    min-width: 300px;
+    height: 80%;
+    max-width: 100%;
     margin: 5rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
@@ -267,6 +266,9 @@
     -webkit-backdrop-filter: blur(7px);
     overflow: hidden;
     transition: .5s all;
+    .card-img-top{
+        filter: grayscale(25%);
+    }
     .card-body .description{
         height: 50px;
         overflow: hidden;
@@ -313,4 +315,12 @@
             left: 200%;
         }
     }  
+}
+
+
+@media only screen and (max-width: 800px) {
+    .logo-image{
+        width: 300px !important;
+        height: 120px !important;
+    }
 }

@@ -21,7 +21,7 @@
         <header class="primary-bg">
             <!-- Logo -->
             <div id="component" class="container-fluid py-1 d-flex justify-content-center">
-                <img src="/assets/images/Logo.png" alt="Text Logo of Gurjeet Singh">
+                <a class="nav-link" aria-current="page" href="#"><img src="/assets/images/Logo.png" class="logo-image" alt="Text Logo of Gurjeet Singh"></a>
             </div>
             
             <!-- Div to center Navigation -->
@@ -53,11 +53,12 @@
         <!-- Hero Section -->
         <main class="primary-bg">
             <!-- Hide the hero on small screen -->
-            <section class="container-fluid primary-bg d-none d-lg-block" id="hero">
+            <section class="container-fluid primary-bg " id="hero">
                 <div class="masthead">
                     <div class="conatiner heroContainer">
                         <div class="row">
-                            <div class="col-lg-6 col-xl-7 secondary-color text-center">
+                            <!-- Hide Huge text on extra small screens -->
+                            <div class="col-lg-6 col-xl-7 secondary-color text-center d-none d-sm-block">
                                 <div class="row d-flex justify-content-end">
                                     <div class="col-lg-8 secondary-color text-center">
                                         <div class="back-circle">
@@ -70,19 +71,19 @@
                                         <div class="heroSubText text-center text-white">
                                             <div class="row d-flex justify-content-center">
                                                 <div class="col-sm-10 col-lg-12 text-white ">
-                                                    <p>A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc, quam adipiscing.A tristique nulla faucibus in quam metus, eget. Id eleifend arcu consectetur nunc.</p>
+                                                    <p>A dedicated web developer from London, driven by my passion for creating exceptional digital experiences. My skills encompass JavaScript, React, CSS, HTML, Node.js, git, and GitHub, allowing me to craft dynamic and engaging web solutions.</p>
                                                 </div>
                                             </div>
                                         </div>
             
                                         <!-- Buttons -->
-                                        <button type="button" class="btn btn-basic btn-md mb-3" onclick="location.href = '#contactMe'">Say Hello</button>
-                                        <button type="button" class="btn btn-secondary btn-md" onclick="location.href = '#work'">Explore Projects</button>
+                                        <button type="button" class="btn btn-basic btn-md mt-3" onclick="location.href = '#contactMe'">Say Hello</button>
+                                        <button type="button" class="btn btn-secondary btn-md mt-3" onclick="location.href = '#work'">Explore Projects</button>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="col-lg-6 col-xl-5">
+                            <!-- Only show image on large screens -->
+                            <div class="col-lg-6 col-xl-5 d-none d-lg-block">
                                 <div class="container d-flex justify-content-center hero-profile position-relative">
                                     <!-- Image Container -->
                                     <div class="imageBox">
@@ -102,7 +103,7 @@
 
             <!-- About me Section -->
             <section class="container-fluid " id="aboutMe">
-                <h2 class="w-auto p-3 fs-1 heading primary-color" >About me</h2>
+                <h2 class="w-auto p-3 fs-1 heading primary-color" >About Me</h2>
                 <p class="p-3 w-75 m-auto">Hi, I'm Gurjeet, a web developer in London. I hold a First-Class Honors degree in Computer Science from Middlesex University, with a focus on web development during my final year. I also completed a postgraduate program in Secondary School Education at University College London. My commitment to web development excellence is unwavering. I'm currently enrolled in a Front-end web development Bootcamp, expanding my skills in JavaScript, React, CSS, HTML, Node.js, git, and GitHub tools. I'm passionate about creativity and collaboration, which defines my approach. This portfolio showcases my dedication through personal, academic and bootcamp projects, demonstrating my evolving skills. Feel free to explore and ask questions about my work, experiences, or goals. Let's connect and bring your web development aspirations to life.</p>
             </section>
 
@@ -110,13 +111,13 @@
             <!-- Work Section -->
             <section class="container-fluid" id="work">
                 <h2 class="w-auto p-3 fs-1 heading secondary-color" >Work</h2>
-                <div class="container-fluid p-3 d-flex justify-content-center">
-                    <div class="row w-100">
+                <div class="container-fluid p-3 d-flex justify-content-center flex-nowrap">
+                    <div class="row">
                         <!-- Work Card 1 -->
-                        <article class="col-lg-3">
+                        <article class="col-lg-4 col-md-4 col-sm-12" style="flex-grow: 1; width: 320px;">
                             <a class="text-decoration-none" href="https://gsgghotra.github.io/prework-study-guide/" target="_blank">
                                 <div class="card custom-card" style="width: 18rem;">
-                                    <img src="./assets/images/workHolder.png" class="card-img-top" alt="...">
+                                    <img src="./assets/images/guide.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h2>Study Guide</h2>
                                         <p class='description'>A platform to keep record of notes</p>
@@ -138,10 +139,10 @@
 
                         <!-- More Work Cards here -->
                         <!-- Work Card 2 -->
-                        <article class="col-lg-3">
+                        <article class="col-lg-4 col-md-4 col-sm-12" style="flex-grow: 1; width: 320px;">
                             <a class="text-decoration-none" href="https://gsgghotra.github.io/Horiseon-website-refactor/" target="_blank">
                                 <div class="card custom-card" style="width: 18rem;">
-                                    <img src="./assets/images/workHolder.png" class="card-img-top" alt="...">
+                                    <img src="./assets/images/refactor.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h2>Horiseon-refactor</h2>
                                         <p class='description'>Refactored the website to meet the industary standards</p>
@@ -162,10 +163,10 @@
                         </article>
 
                         <!-- Work Card 3 -->
-                        <article class="col-lg-3">
+                        <article class="col-lg-4 col-md-4 col-sm-12" style="flex-grow: 1; width: 320px;">
                             <a class="text-decoration-none" href="https://gsgghotra.github.io/Tru-Say-Phones/" target="_blank">
                                 <div class="card custom-card" style="width: 18rem;">
-                                    <img src="./assets/images/workHolder.png" class="card-img-top" alt="...">
+                                    <img src="./assets/images/trusayphones.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h2>Mobile Store</h2>
                                         <p class='description'>Website for local store to display phone contract deals</p>
@@ -186,10 +187,10 @@
                         </article>
 
                         <!-- Work Card 4 -->
-                        <article class="col-lg-3">
+                        <article class="col-lg-4 col-md-4 col-sm-12" style="flex-grow: 1; width: 320px;">
                             <a class="text-decoration-none" href="https://gsgghotra.github.io/Voice-assistant/" target="_blank">
                                 <div class="card custom-card" style="width: 18rem;">
-                                    <img src="./assets/images/workHolder.png" class="card-img-top" alt="...">
+                                    <img src="./assets/images/voiceuser.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h2>Voice Assistant</h2>
                                         <p class='description'>Allows users to enter events in calender using voice commands.</p>
@@ -216,23 +217,22 @@
             <!-- Contact me -->
             <section class="container-fluid" id="contactMe">
                 <h2 class="w-auto p-3 fs-1 heading primary-color" >Contact Me</h2>
-                <div class="conatiner-footer">
-                    <div class="row  d-flex justify-content-center">
-                        <!-- Contact me Card 1 -->
-                        <div class="col-lg-8">
-                            <div class="contact-card w-100">
+                    <div class="row pt-3 d-flex justify-content-center">
+                        <!-- Contact me Card -->
+                        <div class="col-lg-8 col-sm-10">
+                            <div class="contact-card w-100 pt-3">
                                 <div class="row w-100 text-center">
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 pt-3">
                                         <i class="fa-regular fa-envelope fa-xl p-2" style="color: #000000;"></i>
                                         <a  class="link-dark" href = "mailto: gsgghotra@gmail.com">gsgghotra@gmail.com</a>
                                     </div>
                 
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 pt-3">
                                         <i class="fa-brands fa-linkedin fa-xl p-2" style="color: #000000;"></i>
                                         <a  class="link-dark" href="https://www.linkedin.com/in/gsgghotra/" target="_blank">LinkedIn</a>
                                     </div>
                 
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 pt-3">
                                         <i class="fa-brands fa-github fa-xl p-2" style="color: #000000;"></i>
                                         <a class="link-dark" href="https://github.com/gsgghotra?tab=repositories" target="_blank">GitHub</a>
                                     </div>
@@ -240,22 +240,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </section>
         </main>
         
         <!-- Footer -->
         <footer class="container-fluid conatiner-footer" id="footer">
-            <div class="row">
-                <div class="d-flex justify-content-center p-3 col-lg-3 col-sm-12">
-                    <p>Logo Placeholder</p>
+            <div class="row pt-3">
+                <div class="d-flex justify-content-center col-lg-3 col-sm-12 pb-2">
+                    <a class="nav-link" aria-current="page" href="#"><img src="/assets/images/logosmall.png" style="max-height: 40px;" alt="Text Logo of Gurjeet Singh"></a>
                 </div>
                 <div class="d-flex justify-content-center col-lg-6 col-sm-12">
-                    <a class="link-light p-3" href="https://github.com/gsgghotra?tab=repositories" target="_blank"><i class=" fa-brands fa-github fa-2xl" style="color: #F3D1BF;"></i></a>
-                    <a class="link-light p-3" href="https://www.linkedin.com/in/gsgghotra" target="_blank"><i class=" fa-brands fa-linkedin fa-2xl" style="color: #F3D1BF;"></i></a>
+                    <a class="link-light p-2" href="https://github.com/gsgghotra?tab=repositories" target="_blank"><i class=" fa-brands fa-github fa-2xl" style="color: #F3D1BF;"></i></a>
+                    <a class="link-light p-2" href="https://www.linkedin.com/in/gsgghotra" target="_blank"><i class=" fa-brands fa-linkedin fa-2xl" style="color: #F3D1BF;"></i></a>
                 </div>
                 <div class="d-flex justify-content-center col-lg-3 col-sm-12">
-                    <p class="p-3">&copy 2023. All Rights Reserved</p>
+                    <p class="p-2 text-white">&copy 2023. All Rights Reserved</p>
                 </div>
             </div>
         </footer>
