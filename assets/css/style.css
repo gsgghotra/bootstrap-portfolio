@@ -113,7 +113,7 @@
     border-radius: 30px;
 }
 
-    /* Image Section in Hero*/
+    /* Image Section designs in Hero*/
 .imageBox {
     position: relative;
     background-color: var(--secondaryColor);
@@ -187,7 +187,7 @@
 }
 
 
-/* Hero Text Background Designs */
+/* Hero Text Background Designs (Circle and the stars)*/
 .back-circle{
     width: 90%;
     left: 195px;
@@ -242,10 +242,14 @@
 
 /* Footer cards */
 .contact-card{
-    padding: 25px;
+    height: 90px;
     border-radius: 5px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
+}
+
+.contact-link a:hover{
+    font-size: 110%;
 }
 
 /* Card Design in work section*/
