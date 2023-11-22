@@ -30,6 +30,7 @@
 }
 /* Work */
 #work {
+    max-width: 1400px;
     background-color: var(--primaryColor);
     min-height: 350px;
 }
